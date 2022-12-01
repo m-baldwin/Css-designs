@@ -1,0 +1,628 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: auto;
+    padding: 150px 0;
+}
+
+.body {
+    position: relative;
+    height: 100px;
+    width: 100px;
+    background-color: rgb(255, 217, 0);
+    border: black 3px solid;
+    margin: auto;
+    border-radius: 2px;
+    display: flex;
+}
+
+.body_shadow {
+    position: absolute;
+    height: 70px;
+    width: 85px;
+    margin: 19px 8px;
+    background-color: rgb(251, 224, 74);
+}
+
+.body_top {
+    width: 105%;
+    background-color: rgb(251, 224, 74);
+    height: 22px;
+    border: black 2px solid;
+    margin: -2.5px -2.5px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    opacity: .8;
+}
+
+.body_top_right {
+    background-color: black;
+    height: 20px;
+    width: 3px;
+    position: absolute;
+    margin: -1px 70px
+}
+
+.body_top_middle {
+    background-color: black;
+    height: 20px;
+    width: 3px;
+    position: absolute;
+    margin: -1px 22px
+}
+
+.body_top_left {
+    background-color: black;
+    height: 2px;
+    width: 22px;
+    position: absolute;
+    margin: 8px 0;
+}
+
+.shoulder {
+    position: absolute;
+    background-color:rgb(251, 224, 74);
+    height: 23px;
+    width: 19px;
+    margin: -3px -20px;
+    border: black solid 2px;
+    border-top-left-radius: 50%;
+}
+
+.shoulder_shadow {
+    position: absolute;
+    background-color:rgb(255, 217, 0);
+    height: 5px;
+    width: 10px;
+    margin: 7px -18px;
+    border-top-left-radius: 50%;
+}
+
+.shoulder2 {
+    position: absolute;
+    background-color:rgb(251, 223, 67);
+    height: 23px;
+    width: 19px;
+    margin: -3px 94px;
+    border: black solid 2px;
+    border-top-right-radius: 50%; 
+}
+
+.right_hand_up {
+    position: absolute;
+    background-color: rgb(156, 154, 154);
+    height: 29px;
+    width: 50px;
+    margin: 0 78px;
+    clip-path: polygon(100% 100%, 0 100%, 0 62%, 23% 42%, 92% 42%);
+    z-index: 2;
+    border: 2px solid black;
+}
+
+.right_hand_down {
+    position: absolute;
+    background-color: rgb(156, 154, 154);
+    height: 29px;
+    width: 50px;
+    margin: 35px 78px;
+    clip-path: polygon(92% 58%, 31% 58%, 0 35%, 0 0, 100% 0);
+    z-index: 2;
+    border: 2px solid black;
+}
+
+
+
+.right_palm {
+    position: absolute;
+    background-color: rgb(156, 154, 154);
+    height: 20px;
+    width: 10px;
+    margin: 22px 118px;
+    border: 2px solid black;
+    z-index: 3;
+}
+
+.right_hand_line {
+    background-color: black;
+    opacity: .8;
+    height: 16px;
+    width: 2px;
+    position: absolute;
+    margin: 12px 103.5px;
+    z-index: 4;
+    box-shadow: 0 24px 0 0; 
+}
+
+.left_hand_up {
+    clip-path: polygon(100% 63%, 100% 100%, 0 100%, 8% 42%, 70% 42%);
+    position: absolute;
+    background-color: rgb(156, 154, 154);
+    height: 29px;
+    width: 50px;
+    z-index: 2;
+    margin: 0px -35px;
+    border: 2px solid black;
+}
+
+.hand_border_line {
+    background-color: black;
+    height: 1.5px;
+    width: 30px;
+    position: absolute;
+    margin: 12px -31px;
+    box-shadow: 0 39.9px 0 0,
+    125px 0 0 0,
+    125px 39.9px 0 0;
+    z-index: 2;
+}
+
+.hand_border_line2 {
+    background-color: black;
+    height: 1.5px;
+    position: absolute;
+    width: 19px;
+    transform: rotate(21deg);
+    margin: 14.5px -3px;
+    z-index: 2;
+    box-shadow: 87px 2.4px 0 0;
+}
+
+.hand_border_line3 {
+    background-color: black;
+    height: 1.5px;
+    position: absolute;
+    width: 19px;
+    transform: rotate(338deg);
+    margin: 49px -4px;
+    z-index: 2;
+    box-shadow: 88px -2px 0 0;
+}
+
+.hand_border_line4 {
+    background-color: black;
+    height: 12px;
+    position: absolute;
+    width: 1.5px;
+    margin: 12px -33px;
+    z-index: 2;
+    transform: rotate(15deg);
+    box-shadow: 160px -12.5px 0 0;
+}
+
+.hand_border_line5 {
+    background-color: black;
+    height: 12px;
+    position: absolute;
+    width: 1.5px;
+    z-index: 2;
+    margin: 41px -33px;
+    transform: rotate(345deg);
+    box-shadow: 160px 13px 0 0;
+}
+
+.left_hand_down {
+    clip-path: polygon(100% 43%, 64% 58%, 8% 58%, 0 0, 100% 0);
+    position: absolute;
+    background-color: rgb(156, 154, 154);
+    height: 29px;
+    width: 50px;
+    z-index: 2;
+    margin: 35px -35px;
+    border: 2px solid black;
+}
+
+.left_palm {
+    position: absolute;
+    background-color: rgb(156, 154, 154);
+    height: 20px;
+    width: 10px;
+    margin: 22px -35px;
+    border: 2px solid black;
+    z-index: 3;
+}
+
+.left_hand_line {
+    background-color: black;
+    opacity: .8;
+    height: 16px;
+    width: 2px;
+    position: absolute;
+    margin: 12px -11px;
+    z-index: 4;
+    box-shadow: 0 24px 0 0;
+}
+
+.green_button {
+    background-color: green;
+    height: 7px;
+    width: 15px;
+    margin: 6px 30px;
+    border-radius: 2px;
+    border: black 2px solid;
+}
+
+.light_green {
+    position: absolute;
+    height: 3px;
+    width: 6px;
+    background-color: lawngreen;
+}
+
+.red_button {
+    background-color: red;
+    height: 8px;
+    width: 8px;
+    margin: -13px 57px;
+    border-radius: 50%;
+    border: black 2px solid;
+    position: absolute;
+}
+
+.w, .a , .l, .l2, .e {
+    font-weight: bold;
+    position: absolute;
+    top: 75px;
+    font-size: 13px;
+}
+
+.w {
+    left: 20px;
+}
+
+.a {
+    left: 35px;
+}
+
+.l {
+    left: 50px;
+}
+
+.l2 {
+    left: 65px;
+}
+
+.e {
+    left: 77px;
+    background-color: red;
+    border-radius: 50%;
+    padding: 0px 2px;
+    color: white;
+}
+
+.neck {
+    height: 25px;
+    width: 20px;
+    background-color: rgb(156, 154, 154);
+    position: absolute;
+    border: black 3px solid;
+    margin: -25px 38px;
+}
+
+.neckLine {
+    background-color: black;
+    opacity: .4;
+    width: 120%;
+    height: 2px;
+    position: relative;
+    top: 4px;
+    right: 1px;
+}
+
+.neckLine2 {
+    background-color: black;
+    opacity: .4;
+    width: 120%;
+    height: 2px;
+    position: relative;
+    top: 10px;
+    right: 1px;
+}
+
+
+.neck_2 {
+    height: 20px;
+    width: 8px;
+    background-color: rgb(156, 154, 154);
+    position: absolute;
+    border: black 3px solid;
+    margin: -42px 44px;
+    z-index: -1;
+}
+
+.face {
+    height: 15px;
+    width: 25px;
+    background-color: rgb(156, 154, 154);
+    position: absolute;
+    margin: -54.5px 35.5px;
+    border: black 3px solid;
+    z-index: 0;
+}
+
+.eye1 {
+    height: 30px;
+    position: absolute;
+    width: 45px;
+    background-color: rgb(156, 154, 154);
+    border-bottom-left-radius: 40%;
+    border-top-left-radius: 40%;
+    border-bottom-right-radius: 30%;
+    border-top-right-radius: 10%;
+    border: black 3px solid;
+    margin: -55px 0px;
+    transform: rotate(340deg);
+    animation: raise 4s infinite;
+}
+
+@keyframes raise {
+    25% {transform: translateY(-10px);}
+    50% {transform: translateY(-10px) rotate(0deg);}
+}
+
+.eye2 {
+    height: 30px;
+    position: absolute;
+    width: 45px;
+    background-color: rgb(156, 154, 154);
+    border-bottom-left-radius: 30%;
+    border-top-left-radius: 10%;
+    border-bottom-right-radius: 40%;
+    border-top-right-radius: 40%;
+    border: black 3px solid;
+    margin: -55px 51px;
+    transform: rotate(20deg);
+    animation: raise 4s infinite;
+}
+
+.eyeball_left {
+    background-color: rgb(87, 23, 23);
+    border: black 3px solid;
+    height:21px;
+    width: 21px;
+    margin: 0px 11px;
+    border-radius: 50%;
+}
+
+.eyeball_right {
+    background-color: rgb(87, 23, 23);
+    border: black 3px solid;
+    height:21px;
+    width: 21px;
+    margin: 0px 7px;
+    border-radius: 50%;
+}
+
+.pupil_right {
+    background-color: white;
+    height: 3px;
+    width: 9px;
+    margin: 3px 2px;
+    border-radius: 30%;
+}
+
+.pupil_left {
+    background-color: white;
+    height: 3px;
+    width: 9px;
+    margin: 3px 3px;
+    border-radius: 30%;
+}
+
+.left_bolt {
+    background-color: black;
+    opacity: .4;
+    width: 4px;
+    height: 4px;
+    position: absolute;
+    margin: 3px;
+    border-radius: 50%;
+    box-shadow: 
+    0 13px 0 0,
+    30px -2px 0 0;
+}
+
+.right_bolt {
+    background-color: black;
+    opacity: .4;
+    width: 4px;
+    height: 4px;
+    position: absolute;
+    margin: -1px 20px ;
+    border-radius: 50%;
+    box-shadow: 
+    0 14px 0 0,
+    -28px -1px 0 0;
+}
+
+.wheel {
+    background-color: rgb(156, 154, 154);
+    height: 60px;
+    width: 40px;
+    position: absolute;
+    margin: 82px -50px;
+    box-shadow: 154px 0 0 0 rgb(156, 154, 154),
+    154px 0 0 2px black,
+    0 0 0 2px black;
+}
+
+.wheel_line {
+    background-color: black;
+    height: 2px;
+    opacity: .6;
+    width: 40px;
+    position: absolute;
+    margin: 81px -50px;
+    box-shadow: 154px 10px 0 0,
+    0 10px 0 0,
+    154px 0 0 0,
+    154px 20px 0 0,
+    0 20px 0 0,
+    154px 30px 0 0,
+    0 30px 0 0,
+    154px 40px 0 0,
+    0 40px 0 0,
+    154px 50px 0 0,
+    0 50px 0 0;
+    z-index: 5;
+    animation: movement .2s infinite ease-in;
+}
+
+@keyframes movement {
+    100% {transform: translateY(10px) ;}
+}
+
+.wheel_shade {
+    background-color: rgb(128, 128, 128);
+    height: 60px;
+    width: 10px;
+    position: absolute;
+    opacity: .6;
+    margin: 82px -50px;
+    box-shadow: 154px 0 0 0 rgb(128, 128, 128);
+}
+
+.left_leg {
+    clip-path: polygon(100% 58%, 31% 58%, 0 35%, 0 0, 100% 0);
+    background-color:rgb(133, 132, 132);
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    border: 2px black solid;
+    margin: 85px -17px;
+    z-index: -1;
+}
+
+.left_leg2 {
+    clip-path: polygon(100% 54%, 55% 100%, 0 100%, 0 0, 100% 0);
+    background-color:rgb(133, 132, 132);
+    height: 27px;
+    width: 27px;
+    position: absolute;
+    margin: 107px -4px;
+    z-index: -2;
+    border: black solid 2px;
+}
+
+.left_leg2_shadow {
+    clip-path: polygon(100% 54%, 55% 100%, 0 100%, 0 0, 100% 0);
+    background-color:rgb(156, 154, 154);
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    margin: 109px 1px;
+}
+
+.left_black_line2 {
+    background-color: black;
+    width: 16px;
+    height: 2px;
+    position: absolute;
+    margin: 126px 9px;
+    transform: rotate(315deg);
+    z-index: -1;
+}
+
+.legs_black_line {
+    background-color: black;
+    width: 28px;
+    height: 2px;
+    position: absolute;
+    margin: 107px -5px;
+    box-shadow: 75px 0 0 0;
+}
+
+.left_black_line {
+    background-color: black;
+    width: 28px;
+    height: 2px;
+    position: absolute;
+    margin: 98px -29px;
+    transform: rotate(40deg);
+    z-index: -1;
+}
+
+.right_leg {
+    clip-path: polygon(100% 35%, 68% 58%, 0 58%, 0 0, 100% 0);
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    z-index: -1;
+    margin: 85px 70px;
+    background-color: rgb(133, 132, 132);
+    border: 2px solid black;
+}
+
+.right_black_line {
+    background-color: black;
+    width: 28px;
+    height: 2px;
+    position: absolute;
+    margin: 98px 94px;
+    transform: rotate(320deg);
+    z-index: -1;
+}
+
+.right_leg2 {
+    clip-path: polygon(100% 100%, 45% 100%, 0 54%, 0 0, 100% 0);
+    background-color:rgb(133, 132, 132);
+    height: 27px;
+    width: 27px;
+    position: absolute;
+    margin: 107px 70px;
+    z-index: -2;
+    border: black solid 2px;
+}
+
+.right_leg2_shadow {
+    background-color: rgb(156, 154, 154);
+    height: 22px;
+    width: 20px;
+    position: absolute;
+    margin: 107px 75px;
+    clip-path: polygon(100% 100%, 45% 100%, 0 54%, 0 0, 100% 0);
+    z-index: -1;
+}
+
+.right_black_line2 {
+    background-color: black;
+    width: 16px;
+    height: 2px;
+    position: absolute;
+    margin: 127px 69px;
+    transform: rotate(45deg);
+    z-index: -1;
+}
+
+.leg_bolt {
+    background-color: black;
+    opacity: .6;
+    width: 4px;
+    height: 4px;
+    position: absolute;
+    margin: 118px 6px;
+    border-radius: 50%;
+    box-shadow: 
+    76px 0 0 0;
+}
+
+.leg_screw_left {
+    height: 7px;
+    width: 10px;
+    position: absolute;
+    background-color: rgb(133, 132, 132);
+    margin: 120px -12px;
+    z-index: -5;
+    border: 2px black solid;
+}
+
+.leg_screw_right {
+    height: 7px;
+    width: 10px;
+    position: absolute;
+    background-color: rgb(133, 132, 132);
+    margin: 120px 95px;
+    z-index: -5;
+    border: 2px black solid;
+}
