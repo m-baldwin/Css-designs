@@ -1,796 +1,916 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    margin: auto;
-    padding: 150px 0;
-    display: flex;
+  margin: auto;
+  padding: 110px 0;
+  display: grid;
+  gap: 12rem;
 }
 
 .body {
-    position: relative;
-    height: 100px;
-    width: 100px;
-    background-color: rgb(255, 217, 0);
-    border: black 3px solid;
-    margin: auto;
-    border-radius: 2px;
-    display: flex;
+  position: relative;
+  height: 100px;
+  width: 100px;
+  background-color: rgb(255, 217, 0);
+  border: black 3px solid;
+  margin: auto;
+  border-radius: 2px;
+  display: flex;
 }
 
 .body_shadow {
-    position: absolute;
-    height: 70px;
-    width: 85px;
-    margin: 19px 8px;
-    background-color: rgb(251, 224, 74);
+  position: absolute;
+  height: 70px;
+  width: 85px;
+  margin: 19px 8px;
+  background-color: rgb(251, 224, 74);
 }
 
 .body_top {
-    width: 105%;
-    background-color: rgb(251, 224, 74);
-    height: 22px;
-    border: black 2px solid;
-    margin: -2.5px -2.5px;
-    border-top-left-radius: 2px;
-    border-top-right-radius: 2px;
-    opacity: .8;
+  width: 105%;
+  background-color: rgb(251, 224, 74);
+  height: 22px;
+  border: black 2px solid;
+  margin: -2.5px -2.5px;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  opacity: 0.8;
 }
 
 .body_top_right {
-    background-color: black;
-    height: 20px;
-    width: 3px;
-    position: absolute;
-    margin: -1px 70px
+  background-color: black;
+  height: 20px;
+  width: 3px;
+  position: absolute;
+  margin: -1px 70px;
 }
 
 .body_top_middle {
-    background-color: black;
-    height: 20px;
-    width: 3px;
-    position: absolute;
-    margin: -1px 22px
+  background-color: black;
+  height: 20px;
+  width: 3px;
+  position: absolute;
+  margin: -1px 22px;
 }
 
 .body_top_left {
-    background-color: black;
-    height: 2px;
-    width: 22px;
-    position: absolute;
-    margin: 8px 0;
+  background-color: black;
+  height: 2px;
+  width: 22px;
+  position: absolute;
+  margin: 8px 0;
 }
 
 .shoulder {
-    position: absolute;
-    background-color:rgb(251, 224, 74);
-    height: 23px;
-    width: 19px;
-    margin: -3px -20px;
-    border: black solid 2px;
-    border-top-left-radius: 50%;
+  position: absolute;
+  background-color: rgb(251, 224, 74);
+  height: 23px;
+  width: 19px;
+  margin: -3px -20px;
+  border: black solid 2px;
+  border-top-left-radius: 50%;
 }
 
 .shoulder_shadow {
-    position: absolute;
-    background-color:rgb(255, 217, 0);
-    height: 5px;
-    width: 10px;
-    margin: 7px -18px;
-    border-top-left-radius: 50%;
+  position: absolute;
+  background-color: rgb(255, 217, 0);
+  height: 5px;
+  width: 10px;
+  margin: 7px -18px;
+  border-top-left-radius: 50%;
 }
 
 .shoulder2 {
-    position: absolute;
-    background-color:rgb(251, 223, 67);
-    height: 23px;
-    width: 19px;
-    margin: -3px 94px;
-    border: black solid 2px;
-    border-top-right-radius: 50%; 
+  position: absolute;
+  background-color: rgb(251, 223, 67);
+  height: 23px;
+  width: 19px;
+  margin: -3px 94px;
+  border: black solid 2px;
+  border-top-right-radius: 50%;
 }
 
 .right_hand_up {
-    position: absolute;
-    background-color: rgb(156, 154, 154);
-    height: 29px;
-    width: 50px;
-    margin: 0 78px;
-    clip-path: polygon(100% 100%, 0 100%, 0 62%, 23% 42%, 92% 42%);
-    z-index: 2;
-    border: 2px solid black;
+  position: absolute;
+  background-color: rgb(156, 154, 154);
+  height: 29px;
+  width: 50px;
+  margin: 0 78px;
+  clip-path: polygon(100% 100%, 0 100%, 0 62%, 23% 42%, 92% 42%);
+  z-index: 2;
+  border: 2px solid black;
 }
 
 .right_hand_down {
-    position: absolute;
-    background-color: rgb(156, 154, 154);
-    height: 29px;
-    width: 50px;
-    margin: 35px 78px;
-    clip-path: polygon(92% 58%, 31% 58%, 0 35%, 0 0, 100% 0);
-    z-index: 2;
-    border: 2px solid black;
+  position: absolute;
+  background-color: rgb(156, 154, 154);
+  height: 29px;
+  width: 50px;
+  margin: 35px 78px;
+  clip-path: polygon(92% 58%, 31% 58%, 0 35%, 0 0, 100% 0);
+  z-index: 2;
+  border: 2px solid black;
 }
 
-
-
 .right_palm {
-    position: absolute;
-    background-color: rgb(156, 154, 154);
-    height: 20px;
-    width: 10px;
-    margin: 22px 118px;
-    border: 2px solid black;
-    z-index: 3;
+  position: absolute;
+  background-color: rgb(156, 154, 154);
+  height: 20px;
+  width: 10px;
+  margin: 22px 118px;
+  border: 2px solid black;
+  z-index: 3;
 }
 
 .right_hand_line {
-    background-color: black;
-    opacity: .8;
-    height: 16px;
-    width: 2px;
-    position: absolute;
-    margin: 12px 103.5px;
-    z-index: 4;
-    box-shadow: 0 24px 0 0; 
+  background-color: black;
+  opacity: 0.8;
+  height: 16px;
+  width: 2px;
+  position: absolute;
+  margin: 12px 103.5px;
+  z-index: 4;
+  box-shadow: 0 24px 0 0;
 }
 
 .left_hand_up {
-    clip-path: polygon(100% 63%, 100% 100%, 0 100%, 8% 42%, 70% 42%);
-    position: absolute;
-    background-color: rgb(156, 154, 154);
-    height: 29px;
-    width: 50px;
-    z-index: 2;
-    margin: 0px -35px;
-    border: 2px solid black;
+  clip-path: polygon(100% 63%, 100% 100%, 0 100%, 8% 42%, 70% 42%);
+  position: absolute;
+  background-color: rgb(156, 154, 154);
+  height: 29px;
+  width: 50px;
+  z-index: 2;
+  margin: 0px -35px;
+  border: 2px solid black;
 }
 
 .hand_border_line {
-    background-color: black;
-    height: 1.5px;
-    width: 30px;
-    position: absolute;
-    margin: 12px -31px;
-    box-shadow: 0 39.9px 0 0,
-    125px 0 0 0,
-    125px 39.9px 0 0;
-    z-index: 2;
+  background-color: black;
+  height: 1.5px;
+  width: 30px;
+  position: absolute;
+  margin: 12px -31px;
+  box-shadow: 0 39.9px 0 0, 125px 0 0 0, 125px 39.9px 0 0;
+  z-index: 2;
 }
 
 .hand_border_line2 {
-    background-color: black;
-    height: 1.5px;
-    position: absolute;
-    width: 19px;
-    transform: rotate(21deg);
-    margin: 14.5px -3px;
-    z-index: 2;
-    box-shadow: 87px 2.4px 0 0;
+  background-color: black;
+  height: 1.5px;
+  position: absolute;
+  width: 19px;
+  transform: rotate(21deg);
+  margin: 14.5px -3px;
+  z-index: 2;
+  box-shadow: 87px 2.4px 0 0;
 }
 
 .hand_border_line3 {
-    background-color: black;
-    height: 1.5px;
-    position: absolute;
-    width: 19px;
-    transform: rotate(338deg);
-    margin: 49px -4px;
-    z-index: 2;
-    box-shadow: 88px -2px 0 0;
+  background-color: black;
+  height: 1.5px;
+  position: absolute;
+  width: 19px;
+  transform: rotate(338deg);
+  margin: 49px -4px;
+  z-index: 2;
+  box-shadow: 88px -2px 0 0;
 }
 
 .hand_border_line4 {
-    background-color: black;
-    height: 12px;
-    position: absolute;
-    width: 1.5px;
-    margin: 12px -33px;
-    z-index: 2;
-    transform: rotate(15deg);
-    box-shadow: 160px -12.5px 0 0;
+  background-color: black;
+  height: 12px;
+  position: absolute;
+  width: 1.5px;
+  margin: 12px -33px;
+  z-index: 2;
+  transform: rotate(15deg);
+  box-shadow: 160px -12.5px 0 0;
 }
 
 .hand_border_line5 {
-    background-color: black;
-    height: 12px;
-    position: absolute;
-    width: 1.5px;
-    z-index: 2;
-    margin: 41px -33px;
-    transform: rotate(345deg);
-    box-shadow: 160px 13px 0 0;
+  background-color: black;
+  height: 12px;
+  position: absolute;
+  width: 1.5px;
+  z-index: 2;
+  margin: 41px -33px;
+  transform: rotate(345deg);
+  box-shadow: 160px 13px 0 0;
 }
 
 .left_hand_down {
-    clip-path: polygon(100% 43%, 64% 58%, 8% 58%, 0 0, 100% 0);
-    position: absolute;
-    background-color: rgb(156, 154, 154);
-    height: 29px;
-    width: 50px;
-    z-index: 2;
-    margin: 35px -35px;
-    border: 2px solid black;
+  clip-path: polygon(100% 43%, 64% 58%, 8% 58%, 0 0, 100% 0);
+  position: absolute;
+  background-color: rgb(156, 154, 154);
+  height: 29px;
+  width: 50px;
+  z-index: 2;
+  margin: 35px -35px;
+  border: 2px solid black;
 }
 
 .left_palm {
-    position: absolute;
-    background-color: rgb(156, 154, 154);
-    height: 20px;
-    width: 10px;
-    margin: 22px -35px;
-    border: 2px solid black;
-    z-index: 3;
+  position: absolute;
+  background-color: rgb(156, 154, 154);
+  height: 20px;
+  width: 10px;
+  margin: 22px -35px;
+  border: 2px solid black;
+  z-index: 3;
 }
 
 .left_hand_line {
-    background-color: black;
-    opacity: .8;
-    height: 16px;
-    width: 2px;
-    position: absolute;
-    margin: 12px -11px;
-    z-index: 4;
-    box-shadow: 0 24px 0 0;
+  background-color: black;
+  opacity: 0.8;
+  height: 16px;
+  width: 2px;
+  position: absolute;
+  margin: 12px -11px;
+  z-index: 4;
+  box-shadow: 0 24px 0 0;
 }
 
 .green_button {
-    background-color: green;
-    height: 7px;
-    width: 15px;
-    margin: 6px 30px;
-    border-radius: 2px;
-    border: black 2px solid;
+  background-color: green;
+  height: 7px;
+  width: 15px;
+  margin: 6px 30px;
+  border-radius: 2px;
+  border: black 2px solid;
 }
 
 .light_green {
-    position: absolute;
-    height: 3px;
-    width: 6px;
-    background-color: lawngreen;
+  position: absolute;
+  height: 3px;
+  width: 6px;
+  background-color: lawngreen;
 }
 
 .red_button {
-    background-color: red;
-    height: 8px;
-    width: 8px;
-    margin: -13px 57px;
-    border-radius: 50%;
-    border: black 2px solid;
-    position: absolute;
+  background-color: red;
+  height: 8px;
+  width: 8px;
+  margin: -13px 57px;
+  border-radius: 50%;
+  border: black 2px solid;
+  position: absolute;
 }
 
-.w, .a , .l, .l2, .e {
-    font-weight: bold;
-    position: absolute;
-    top: 75px;
-    font-size: 13px;
+.w,
+.a,
+.l,
+.l2,
+.e {
+  font-weight: bold;
+  position: absolute;
+  top: 75px;
+  font-size: 13px;
 }
 
 .w {
-    left: 20px;
+  left: 20px;
 }
 
 .a {
-    left: 35px;
+  left: 35px;
 }
 
 .l {
-    left: 50px;
+  left: 50px;
 }
 
 .l2 {
-    left: 65px;
+  left: 65px;
 }
 
 .e {
-    left: 77px;
-    background-color: red;
-    border-radius: 50%;
-    padding: 0px 2px;
-    color: white;
+  left: 77px;
+  background-color: red;
+  border-radius: 50%;
+  padding: 0px 2px;
+  color: white;
 }
 
 .neck {
-    height: 25px;
-    width: 20px;
-    background-color: rgb(156, 154, 154);
-    position: absolute;
-    border: black 3px solid;
-    margin: -25px 38px;
+  height: 25px;
+  width: 20px;
+  background-color: rgb(156, 154, 154);
+  position: absolute;
+  border: black 3px solid;
+  margin: -25px 38px;
 }
 
 .neckLine {
-    background-color: black;
-    opacity: .4;
-    width: 120%;
-    height: 2px;
-    position: relative;
-    top: 4px;
-    right: 1px;
+  background-color: black;
+  opacity: 0.4;
+  width: 120%;
+  height: 2px;
+  position: relative;
+  top: 4px;
+  right: 1px;
 }
 
 .neckLine2 {
-    background-color: black;
-    opacity: .4;
-    width: 120%;
-    height: 2px;
-    position: relative;
-    top: 10px;
-    right: 1px;
+  background-color: black;
+  opacity: 0.4;
+  width: 120%;
+  height: 2px;
+  position: relative;
+  top: 10px;
+  right: 1px;
 }
 
-
 .neck_2 {
-    height: 20px;
-    width: 8px;
-    background-color: rgb(156, 154, 154);
-    position: absolute;
-    border: black 3px solid;
-    margin: -42px 44px;
-    z-index: -1;
+  height: 20px;
+  width: 8px;
+  background-color: rgb(156, 154, 154);
+  position: absolute;
+  border: black 3px solid;
+  margin: -42px 44px;
+  z-index: -1;
 }
 
 .face {
-    height: 15px;
-    width: 25px;
-    background-color: rgb(156, 154, 154);
-    position: absolute;
-    margin: -54.5px 35.5px;
-    border: black 3px solid;
-    z-index: 0;
+  height: 15px;
+  width: 25px;
+  background-color: rgb(156, 154, 154);
+  position: absolute;
+  margin: -54.5px 35.5px;
+  border: black 3px solid;
+  z-index: 0;
 }
 
 .eye1 {
-    height: 30px;
-    position: absolute;
-    width: 45px;
-    background-color: rgb(156, 154, 154);
-    border-bottom-left-radius: 40%;
-    border-top-left-radius: 40%;
-    border-bottom-right-radius: 30%;
-    border-top-right-radius: 10%;
-    border: black 3px solid;
-    margin: -55px 0px;
-    transform: rotate(340deg);
-    animation: raise 4s infinite;
+  height: 30px;
+  position: absolute;
+  width: 45px;
+  background-color: rgb(156, 154, 154);
+  border-bottom-left-radius: 40%;
+  border-top-left-radius: 40%;
+  border-bottom-right-radius: 30%;
+  border-top-right-radius: 10%;
+  border: black 3px solid;
+  margin: -55px 0px;
+  transform: rotate(340deg);
+  animation: raise 4s infinite;
 }
 
 @keyframes raise {
-    25% {transform: translateY(-10px);}
-    50% {transform: translateY(-10px) rotate(0deg);}
+  25% {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateY(-10px) rotate(0deg);
+  }
 }
 
 .eye2 {
-    height: 30px;
-    position: absolute;
-    width: 45px;
-    background-color: rgb(156, 154, 154);
-    border-bottom-left-radius: 30%;
-    border-top-left-radius: 10%;
-    border-bottom-right-radius: 40%;
-    border-top-right-radius: 40%;
-    border: black 3px solid;
-    margin: -55px 51px;
-    transform: rotate(20deg);
-    animation: raise 4s infinite;
+  height: 30px;
+  position: absolute;
+  width: 45px;
+  background-color: rgb(156, 154, 154);
+  border-bottom-left-radius: 30%;
+  border-top-left-radius: 10%;
+  border-bottom-right-radius: 40%;
+  border-top-right-radius: 40%;
+  border: black 3px solid;
+  margin: -55px 51px;
+  transform: rotate(20deg);
+  animation: raise 4s infinite;
 }
 
 .eyeball_left {
-    background-color: rgb(87, 23, 23);
-    border: black 3px solid;
-    height:21px;
-    width: 21px;
-    margin: 0px 11px;
-    border-radius: 50%;
+  background-color: rgb(87, 23, 23);
+  border: black 3px solid;
+  height: 21px;
+  width: 21px;
+  margin: 0px 11px;
+  border-radius: 50%;
 }
 
 .eyeball_right {
-    background-color: rgb(87, 23, 23);
-    border: black 3px solid;
-    height:21px;
-    width: 21px;
-    margin: 0px 7px;
-    border-radius: 50%;
+  background-color: rgb(87, 23, 23);
+  border: black 3px solid;
+  height: 21px;
+  width: 21px;
+  margin: 0px 7px;
+  border-radius: 50%;
 }
 
 .pupil_right {
-    background-color: white;
-    height: 3px;
-    width: 9px;
-    margin: 3px 2px;
-    border-radius: 30%;
+  background-color: white;
+  height: 3px;
+  width: 9px;
+  margin: 3px 2px;
+  border-radius: 30%;
 }
 
 .pupil_left {
-    background-color: white;
-    height: 3px;
-    width: 9px;
-    margin: 3px 3px;
-    border-radius: 30%;
+  background-color: white;
+  height: 3px;
+  width: 9px;
+  margin: 3px 3px;
+  border-radius: 30%;
 }
 
 .left_bolt {
-    background-color: black;
-    opacity: .4;
-    width: 4px;
-    height: 4px;
-    position: absolute;
-    margin: 3px;
-    border-radius: 50%;
-    box-shadow: 
-    0 13px 0 0,
-    30px -2px 0 0;
+  background-color: black;
+  opacity: 0.4;
+  width: 4px;
+  height: 4px;
+  position: absolute;
+  margin: 3px;
+  border-radius: 50%;
+  box-shadow: 0 13px 0 0, 30px -2px 0 0;
 }
 
 .right_bolt {
-    background-color: black;
-    opacity: .4;
-    width: 4px;
-    height: 4px;
-    position: absolute;
-    margin: -1px 20px ;
-    border-radius: 50%;
-    box-shadow: 
-    0 14px 0 0,
-    -28px -1px 0 0;
+  background-color: black;
+  opacity: 0.4;
+  width: 4px;
+  height: 4px;
+  position: absolute;
+  margin: -1px 20px;
+  border-radius: 50%;
+  box-shadow: 0 14px 0 0, -28px -1px 0 0;
 }
 
 .wheel {
-    background-color: rgb(156, 154, 154);
-    height: 60px;
-    width: 40px;
-    position: absolute;
-    margin: 82px -50px;
-    box-shadow: 154px 0 0 0 rgb(156, 154, 154),
-    154px 0 0 2px black,
+  background-color: rgb(156, 154, 154);
+  height: 60px;
+  width: 40px;
+  position: absolute;
+  margin: 82px -50px;
+  box-shadow: 154px 0 0 0 rgb(156, 154, 154), 154px 0 0 2px black,
     0 0 0 2px black;
 }
 
 .wheel_line {
-    background-color: black;
-    height: 2px;
-    opacity: .6;
-    width: 40px;
-    position: absolute;
-    margin: 81px -50px;
-    box-shadow: 154px 10px 0 0,
-    0 10px 0 0,
-    154px 0 0 0,
-    154px 20px 0 0,
-    0 20px 0 0,
-    154px 30px 0 0,
-    0 30px 0 0,
-    154px 40px 0 0,
-    0 40px 0 0,
-    154px 50px 0 0,
-    0 50px 0 0;
-    z-index: 5;
-    animation: movement .2s infinite ease-in;
+  background-color: black;
+  height: 2px;
+  opacity: 0.6;
+  width: 40px;
+  position: absolute;
+  margin: 81px -50px;
+  box-shadow: 154px 10px 0 0, 0 10px 0 0, 154px 0 0 0, 154px 20px 0 0,
+    0 20px 0 0, 154px 30px 0 0, 0 30px 0 0, 154px 40px 0 0, 0 40px 0 0,
+    154px 50px 0 0, 0 50px 0 0;
+  z-index: 5;
+  animation: movement 0.2s infinite ease-in;
 }
 
 @keyframes movement {
-    100% {transform: translateY(10px) ;}
+  100% {
+    transform: translateY(10px);
+  }
 }
 
 .wheel_shade {
-    background-color: rgb(128, 128, 128);
-    height: 60px;
-    width: 10px;
-    position: absolute;
-    opacity: .6;
-    margin: 82px -50px;
-    box-shadow: 154px 0 0 0 rgb(128, 128, 128);
+  background-color: rgb(128, 128, 128);
+  height: 60px;
+  width: 10px;
+  position: absolute;
+  opacity: 0.6;
+  margin: 82px -50px;
+  box-shadow: 154px 0 0 0 rgb(128, 128, 128);
 }
 
 .left_leg {
-    clip-path: polygon(100% 58%, 31% 58%, 0 35%, 0 0, 100% 0);
-    background-color:rgb(133, 132, 132);
-    position: absolute;
-    height: 40px;
-    width: 40px;
-    border: 2px black solid;
-    margin: 85px -17px;
-    z-index: -1;
+  clip-path: polygon(100% 58%, 31% 58%, 0 35%, 0 0, 100% 0);
+  background-color: rgb(133, 132, 132);
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  border: 2px black solid;
+  margin: 85px -17px;
+  z-index: -1;
 }
 
 .left_leg2 {
-    clip-path: polygon(100% 54%, 55% 100%, 0 100%, 0 0, 100% 0);
-    background-color:rgb(133, 132, 132);
-    height: 27px;
-    width: 27px;
-    position: absolute;
-    margin: 107px -4px;
-    z-index: -2;
-    border: black solid 2px;
+  clip-path: polygon(100% 54%, 55% 100%, 0 100%, 0 0, 100% 0);
+  background-color: rgb(133, 132, 132);
+  height: 27px;
+  width: 27px;
+  position: absolute;
+  margin: 107px -4px;
+  z-index: -2;
+  border: black solid 2px;
 }
 
 .left_leg2_shadow {
-    clip-path: polygon(100% 54%, 55% 100%, 0 100%, 0 0, 100% 0);
-    background-color:rgb(156, 154, 154);
-    height: 20px;
-    width: 20px;
-    position: absolute;
-    margin: 109px 1px;
+  clip-path: polygon(100% 54%, 55% 100%, 0 100%, 0 0, 100% 0);
+  background-color: rgb(156, 154, 154);
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  margin: 109px 1px;
 }
 
 .left_black_line2 {
-    background-color: black;
-    width: 16px;
-    height: 2px;
-    position: absolute;
-    margin: 126px 9px;
-    transform: rotate(315deg);
-    z-index: -1;
+  background-color: black;
+  width: 16px;
+  height: 2px;
+  position: absolute;
+  margin: 126px 9px;
+  transform: rotate(315deg);
+  z-index: -1;
 }
 
 .legs_black_line {
-    background-color: black;
-    width: 28px;
-    height: 2px;
-    position: absolute;
-    margin: 107px -5px;
-    box-shadow: 75px 0 0 0;
+  background-color: black;
+  width: 28px;
+  height: 2px;
+  position: absolute;
+  margin: 107px -5px;
+  box-shadow: 75px 0 0 0;
 }
 
 .left_black_line {
-    background-color: black;
-    width: 28px;
-    height: 2px;
-    position: absolute;
-    margin: 98px -29px;
-    transform: rotate(40deg);
-    z-index: -1;
+  background-color: black;
+  width: 28px;
+  height: 2px;
+  position: absolute;
+  margin: 98px -29px;
+  transform: rotate(40deg);
+  z-index: -1;
 }
 
 .right_leg {
-    clip-path: polygon(100% 35%, 68% 58%, 0 58%, 0 0, 100% 0);
-    position: absolute;
-    height: 40px;
-    width: 40px;
-    z-index: -1;
-    margin: 85px 70px;
-    background-color: rgb(133, 132, 132);
-    border: 2px solid black;
+  clip-path: polygon(100% 35%, 68% 58%, 0 58%, 0 0, 100% 0);
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  z-index: -1;
+  margin: 85px 70px;
+  background-color: rgb(133, 132, 132);
+  border: 2px solid black;
 }
 
 .right_black_line {
-    background-color: black;
-    width: 28px;
-    height: 2px;
-    position: absolute;
-    margin: 98px 94px;
-    transform: rotate(320deg);
-    z-index: -1;
+  background-color: black;
+  width: 28px;
+  height: 2px;
+  position: absolute;
+  margin: 98px 94px;
+  transform: rotate(320deg);
+  z-index: -1;
 }
 
 .right_leg2 {
-    clip-path: polygon(100% 100%, 45% 100%, 0 54%, 0 0, 100% 0);
-    background-color:rgb(133, 132, 132);
-    height: 27px;
-    width: 27px;
-    position: absolute;
-    margin: 107px 70px;
-    z-index: -2;
-    border: black solid 2px;
+  clip-path: polygon(100% 100%, 45% 100%, 0 54%, 0 0, 100% 0);
+  background-color: rgb(133, 132, 132);
+  height: 27px;
+  width: 27px;
+  position: absolute;
+  margin: 107px 70px;
+  z-index: -2;
+  border: black solid 2px;
 }
 
 .right_leg2_shadow {
-    background-color: rgb(156, 154, 154);
-    height: 22px;
-    width: 20px;
-    position: absolute;
-    margin: 107px 75px;
-    clip-path: polygon(100% 100%, 45% 100%, 0 54%, 0 0, 100% 0);
-    z-index: -1;
+  background-color: rgb(156, 154, 154);
+  height: 22px;
+  width: 20px;
+  position: absolute;
+  margin: 107px 75px;
+  clip-path: polygon(100% 100%, 45% 100%, 0 54%, 0 0, 100% 0);
+  z-index: -1;
 }
 
 .right_black_line2 {
-    background-color: black;
-    width: 16px;
-    height: 2px;
-    position: absolute;
-    margin: 127px 69px;
-    transform: rotate(45deg);
-    z-index: -1;
+  background-color: black;
+  width: 16px;
+  height: 2px;
+  position: absolute;
+  margin: 127px 69px;
+  transform: rotate(45deg);
+  z-index: -1;
 }
 
 .leg_bolt {
-    background-color: black;
-    opacity: .6;
-    width: 4px;
-    height: 4px;
-    position: absolute;
-    margin: 118px 6px;
-    border-radius: 50%;
-    box-shadow: 
-    76px 0 0 0;
+  background-color: black;
+  opacity: 0.6;
+  width: 4px;
+  height: 4px;
+  position: absolute;
+  margin: 118px 6px;
+  border-radius: 50%;
+  box-shadow: 76px 0 0 0;
 }
 
 .leg_screw_left {
-    height: 7px;
-    width: 10px;
-    position: absolute;
-    background-color: rgb(133, 132, 132);
-    margin: 120px -12px;
-    z-index: -5;
-    border: 2px black solid;
+  height: 7px;
+  width: 10px;
+  position: absolute;
+  background-color: rgb(133, 132, 132);
+  margin: 120px -12px;
+  z-index: -5;
+  border: 2px black solid;
 }
 
 .leg_screw_right {
-    height: 7px;
-    width: 10px;
-    position: absolute;
-    background-color: rgb(133, 132, 132);
-    margin: 120px 95px;
-    z-index: -5;
-    border: 2px black solid;
+  height: 7px;
+  width: 10px;
+  position: absolute;
+  background-color: rgb(133, 132, 132);
+  margin: 120px 95px;
+  z-index: -5;
+  border: 2px black solid;
 }
 
 /* eve */
 
 :root {
-    --background: linear-gradient(90deg, rgba(221, 221, 222, 1) 0%, rgba(247, 247, 247, 1) 95%);
-    --box-shadow: 3px -2px 9px 0px rgb(224, 222, 224);
+  --background: linear-gradient(
+    90deg,
+    rgba(221, 221, 222, 1) 0%,
+    rgba(247, 247, 247, 1) 95%
+  );
+  --box-shadow: 3px -2px 9px 0px rgb(224, 222, 224);
 }
 
 .eve_body {
-    position: relative;
-    height: 150px;
-    width: 90px;
-    background: rgb(221, 221, 222);
-    background: var(--background);
-    margin: auto;
-    border-radius: 50% 50% 48% 52% / 30% 31% 69% 70%;
-    box-shadow: var(--box-shadow) ;
+  position: relative;
+  height: 150px;
+  width: 90px;
+  background: rgb(221, 221, 222);
+  background: var(--background);
+  margin: auto;
+  border-radius: 50% 50% 48% 52% / 30% 31% 69% 70%;
+  box-shadow: var(--box-shadow);
 }
 
 .eve_neck {
-    position: absolute;
-    background-color: white;
-    width: 90px;
-    height: 25px;
-    margin-top: -5px;
+  position: absolute;
+  background-color: white;
+  width: 90px;
+  height: 25px;
+  margin-top: -5px;
 }
 
 .eve_head {
-    position: absolute;
-    position: relative;
-    background: var(--background);
-    height: 80px;
-    width: 120px;
-    border-radius: 50% 50% 49% 51% / 63% 63% 37% 37%;
-    margin-top: -64px;
-    margin-left: -12px;
-    box-shadow: var(--box-shadow);
+  position: absolute;
+  position: relative;
+  background: var(--background);
+  height: 80px;
+  width: 120px;
+  border-radius: 50% 50% 49% 51% / 63% 63% 37% 37%;
+  margin-top: -64px;
+  margin-left: -12px;
+  box-shadow: var(--box-shadow);
 }
 
 .eve_face {
-    position: absolute;
-    height: 50px;
-    width: 80px;
-    border-radius: 50% 50% 50% 50% / 58% 58% 42% 42%;
-    background-color:rgba(0, 0, 0, .8);
-    margin-top: 14px;
-    margin-left: 22px;
+  position: absolute;
+  height: 50px;
+  width: 80px;
+  border-radius: 50% 50% 50% 50% / 58% 58% 42% 42%;
+  background-color: rgba(0, 0, 0, 0.8);
+  margin-top: 14px;
+  margin-left: 22px;
 }
 
 .eve_eye {
-    position: absolute;
-    background-color: rgb(81, 144, 187);
-    height: 15px;
-    width: 25px;
-    border-radius: 100%;
-    rotate: 15deg;
-    margin-top: 14px;
-    margin-left: 10px;
-    filter: blur(2px);
-    animation: happy2 6000ms ease-in-out infinite;
+  position: absolute;
+  background-color: rgb(81, 144, 187);
+  height: 15px;
+  width: 25px;
+  border-radius: 100%;
+  rotate: 15deg;
+  margin-top: 14px;
+  margin-left: 10px;
+  filter: blur(2px);
+  animation: happy2 6000ms ease-in-out infinite;
 }
 
 .eve_eye2 {
-    position: absolute;
-    background-color: rgb(81, 144, 187);
-    height: 15px;
-    width: 25px;
-    border-radius: 100%;
-    rotate: -15deg;
-    margin-top: 14px;
-    margin-left: 46px;
-    filter: blur(2px);
-    animation: happy 6000ms ease-in-out infinite;
+  position: absolute;
+  background-color: rgb(81, 144, 187);
+  height: 15px;
+  width: 25px;
+  border-radius: 100%;
+  rotate: -15deg;
+  margin-top: 14px;
+  margin-left: 46px;
+  filter: blur(2px);
+  animation: happy 6000ms ease-in-out infinite;
 }
 
 .eve_arm {
-    position: absolute;
-    background: var(--background);
-    height: 110px;
-    width: 20px;
-    border-radius: 50% 50% 50% 50% / 27% 5% 100% 73%;
-    rotate: 10deg;
-    margin: 10px -30px;
-    box-shadow: var(--box-shadow);
-    animation: wave 6000ms infinite ease-in-out;
+  position: absolute;
+  background: var(--background);
+  height: 110px;
+  width: 20px;
+  border-radius: 50% 50% 50% 50% / 27% 5% 100% 73%;
+  rotate: 10deg;
+  margin: 10px -30px;
+  box-shadow: var(--box-shadow);
+  animation: wave 6000ms infinite ease-in-out;
 }
 
 .eve_arm2 {
-    position: absolute;
-    background: var(--background);
-    height: 110px;
-    width: 20px;
-    border-radius: 50% 50% 50% 50% / 5% 27% 73% 100%;
-    rotate: 350deg;
-    margin: 10px 100px;
-    box-shadow: var(--box-shadow)
+  position: absolute;
+  background: var(--background);
+  height: 110px;
+  width: 20px;
+  border-radius: 50% 50% 50% 50% / 5% 27% 73% 100%;
+  rotate: 350deg;
+  margin: 10px 100px;
+  box-shadow: var(--box-shadow);
 }
 
 @keyframes blink {
-    0% {background: rgba(81, 144, 187, 1)}
-    95% {background: rgba(81, 144, 187, 1)}
-    /* 95% {background: linear-gradient(0deg, rgba(81, 144, 187, 1) 75%, rgba(0, 0, 0, .8) 100%)} */
-    100% {background: linear-gradient(0deg, rgba(81, 144, 187, 1) 15%, rgba(0, 0, 0, .8) 54%)}
-
+  0% {
+    background: rgba(81, 144, 187, 1);
+  }
+  95% {
+    background: rgba(81, 144, 187, 1);
+  }
+  /* 95% {background: linear-gradient(0deg, rgba(81, 144, 187, 1) 75%, rgba(0, 0, 0, .8) 100%)} */
+  100% {
+    background: linear-gradient(
+      0deg,
+      rgba(81, 144, 187, 1) 15%,
+      rgba(0, 0, 0, 0.8) 54%
+    );
+  }
 }
 
 @keyframes happy {
-    60% {border-radius: 100%; height: 15px; rotate: -15deg; margin-top: 14px;}
-    65% {border-radius: 51% 49% 50% 50% / 87% 100% 0% 13%;
-        height: 7px;
-        rotate: 0deg;
-        margin-top: 20px}
-    95% {border-radius: 51% 49% 50% 50% / 87% 100% 0% 13%;
-        height: 7px;
-        rotate: 0deg;
-        margin-top: 20px}
+  60% {
+    border-radius: 100%;
+    height: 15px;
+    rotate: -15deg;
+    margin-top: 14px;
+  }
+  65% {
+    border-radius: 51% 49% 50% 50% / 87% 100% 0% 13%;
+    height: 7px;
+    rotate: 0deg;
+    margin-top: 20px;
+  }
+  95% {
+    border-radius: 51% 49% 50% 50% / 87% 100% 0% 13%;
+    height: 7px;
+    rotate: 0deg;
+    margin-top: 20px;
+  }
 }
 
 @keyframes happy2 {
-        60% {
-                border-radius: 100%;
-                height: 15px;
-                rotate: 15deg;
-                margin-top: 14px;
-            }
-        
-            65% {
-                border-radius: 51% 49% 50% 50% / 87% 100% 0% 13%;
-                height: 7px;
-                rotate: 0deg;
-                margin-top: 20px
-            }
-        
-            95% {
-                border-radius: 51% 49% 50% 50% / 87% 100% 0% 13%;
-                height: 7px;
-                rotate: 0deg;
-                margin-top: 20px
-            }
-        }
+  60% {
+    border-radius: 100%;
+    height: 15px;
+    rotate: 15deg;
+    margin-top: 14px;
+  }
+
+  65% {
+    border-radius: 51% 49% 50% 50% / 87% 100% 0% 13%;
+    height: 7px;
+    rotate: 0deg;
+    margin-top: 20px;
+  }
+
+  95% {
+    border-radius: 51% 49% 50% 50% / 87% 100% 0% 13%;
+    height: 7px;
+    rotate: 0deg;
+    margin-top: 20px;
+  }
+}
 
 @keyframes wave {
-    60% {
-            rotate: 10deg;
-            margin: 10px -30px;
-        }
+  60% {
+    rotate: 10deg;
+    margin: 10px -30px;
+  }
 
-    65% {
-        rotate: 160deg;
-        margin:-70px -40px;
-    }
+  65% {
+    rotate: 160deg;
+    margin: -70px -40px;
+  }
 
-    70% {
-        rotate: 150deg;
-        margin: -70px -40px;
-    }
+  70% {
+    rotate: 150deg;
+    margin: -70px -40px;
+  }
 
-    75% {
-        rotate: 160deg;
-        margin: -70px -40px;
-    }
+  75% {
+    rotate: 160deg;
+    margin: -70px -40px;
+  }
 
-    80% {
-        rotate: 150deg;
-        margin: -70px -40px;
-    }
+  80% {
+    rotate: 150deg;
+    margin: -70px -40px;
+  }
+}
+
+/* Captain americas sheild */
+
+:root {
+  --sheild-background: rgb(88, 96, 251);
+}
+
+.container_shield {
+  margin-top: -80px;
+  height: fit-content;
+  background: transparent;
+}
+
+.shield {
+  position: relative;
+  height: 200px;
+  width: 200px;
+  background: var(--sheild-background);
+  margin: auto;
+  border-radius: 100%;
+  box-shadow: 0 0 0 20px red inset, 0 0 0 40px rgb(229, 228, 228) inset,
+    0 0 0 60px red inset;
+}
+
+.shield::after {
+  content: "";
+  background: black;
+  width: 200px;
+  height: 15px;
+  position: absolute;
+  top: 230px;
+  filter: blur(20px);
+  opacity: 0.8;
+}
+
+.reflection {
+  position: absolute;
+  height: 200px;
+  width: 15px;
+  background-color: whitesmoke;
+  rotate: 20deg;
+  animation: reflection 4000ms ease-in-out infinite;
+  filter: blur(15px);
+  opacity: 0;
+}
+
+.star {
+  --star-color: whitesmoke;
+  margin-left: 63px;
+  margin-top: 83px;
+  font-size: 2.4em;
+  position: absolute;
+  /* position: relative; */
+  display: block;
+  width: 0px;
+  height: 0px;
+  border-right: 1em solid transparent;
+  border-bottom: 0.7em solid var(--star-color);
+  border-left: 1em solid transparent;
+  transform: rotate(35deg);
+}
+
+.star::before {
+  border-bottom: 0.8em solid var(--star-color);
+  border-left: 0.3em solid transparent;
+  border-right: 0.3em solid transparent;
+  position: absolute;
+  height: 0;
+  width: 0;
+  top: -0.45em;
+  left: -0.65em;
+  display: block;
+  content: "";
+  transform: rotate(-35deg);
+}
+.star::after {
+  position: absolute;
+  display: block;
+  top: 0.03em;
+  left: -1.05em;
+  width: 0;
+  height: 0;
+  border-right: 1em solid transparent;
+  border-bottom: 0.7em solid var(--star-color);
+  border-left: 1em solid transparent;
+  transform: rotate(-70deg);
+  content: "";
+}
+
+@keyframes reflection {
+  79% {
+    opacity: 0;
+  }
+
+  80% {
+    margin-left: 0;
+    background: white;
+    opacity: 1;
+  }
+
+  100% {
+    margin-left: 200px;
+    background: white;
+    opacity: 1;
+  }
 }
